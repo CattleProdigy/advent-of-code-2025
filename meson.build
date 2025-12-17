@@ -39,3 +39,5 @@ endif
 
 day1 = executable('day1', 'src/day1.c')
 test('day1', day1)
+day2 = executable('day2', 'src/day2.c')
+test('day2', day2)
