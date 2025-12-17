@@ -7,7 +7,8 @@ project(
 cc = meson.get_compiler('c')
 
 clang_warnings = [
-    #'-Wall',  # reasonable and standard
+    # Implied by warning_level=2
+    # '-Wall',  # reasonable and standard
     #'-Wextra',  # extra warnings
     '-Wshadow',  # warn the user if a variable declaration shadows one from a parent context
     '-Wcast-align',  # warn for potential performance problem casts
@@ -49,3 +50,5 @@ day5 = executable('day5', 'src/day5.c')
 test('day5', day5)
 day6 = executable('day6', 'src/day6.c')
 test('day6', day6)
+day7 = executable('day7', 'src/day7.c')
+test('day7', day7)
